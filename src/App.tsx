@@ -1,15 +1,18 @@
 import TodoStore from "./stores/TodoStore";
-import { TodoInput } from "./Todo/TodoInput";
-import TodoList from "./Todo/TodoList";
+import { TodoInput } from "./components/Todo/TodoInput";
+import TodoList from "./components/Todo/TodoList";
+
+import * as S from "./styles/global";
 
 const todos = new TodoStore();
 
 function App() {
   return (
-    <div className="App">
+    <S.Wrapper>
       <TodoInput todos={todos} />
       <TodoList todos={todos} />
-    </div>
+      <S.GlobalStyles />
+    </S.Wrapper>
   );
 }
 
