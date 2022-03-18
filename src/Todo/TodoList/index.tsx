@@ -1,6 +1,7 @@
+import { observer } from "mobx-react-lite";
 import TodoStore from "../../stores/TodoStore";
 
-export function TodoList({ todos }: { todos: TodoStore }) {
+function TodoList({ todos }: { todos: TodoStore }) {
   return (
     <ul>
       {todos.list.map((t) => (
@@ -9,3 +10,5 @@ export function TodoList({ todos }: { todos: TodoStore }) {
     </ul>
   );
 }
+
+export default observer(TodoList);
