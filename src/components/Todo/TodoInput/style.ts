@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TodoInputGroup = styled.div`
+export const TodoFrom = styled.form`
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 3fr 1fr;
