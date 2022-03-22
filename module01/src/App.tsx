@@ -9,8 +9,8 @@ const todos = new TodoStore();
 function App() {
   return (
     <S.Wrapper>
-      <TodoInput todos={todos} />
-      <TodoList todos={todos} />
+      <TodoInput />
+      <TodoList />
       <S.GlobalStyles />
     </S.Wrapper>
   );
